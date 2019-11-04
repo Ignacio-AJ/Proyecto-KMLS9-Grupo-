@@ -12,7 +12,7 @@ Crear un software, el cual sea capaz de organizar eficientemente el inventario p
 
 ## Funcionalidades
 
-1. Calcular costos
+1. Calcular costos de una lista predeterminada
 2. Registrar los tipos de materiales a utilizar
 3. Organizar en listas los materiales
 4. Registrar costos y cantidades de materiales a utilizar
