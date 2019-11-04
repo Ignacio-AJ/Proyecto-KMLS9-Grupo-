@@ -9,8 +9,18 @@ for i in range(cantidad):
 
     producto = [nombre,precio,cantidad_productos]
     lista.append(producto)
+print(lista)
 #Preguntar presupuesto para la compra de materiales
 pre = float(input("Ingresar presupuesto para la compra de materiales para la obra:"))
 #Preguntar si el presupuesto cubre el costo
-
-print(lista)
+a = 0
+costos = 0
+while a < cantidad:
+    costos = costos + (lista[a][1]*lista[a][2])
+    a+=1
+print(costos)
+viabilidad = pre-costos
+if viabilidad >= 0:
+    print("Es viable por:", viabilidad)
+else:
+    print("No es viable por", viabilidad)
