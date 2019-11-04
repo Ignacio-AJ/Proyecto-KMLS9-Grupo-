@@ -16,5 +16,5 @@ Crear un software, el cual sea capaz de organizar eficientemente el inventario p
 2. Registrar los tipos de materiales a utilizar
 3. Organizar en listas los materiales
 4. Registrar costos y cantidades de materiales a utilizar
-5. Registrar presupuesto
+5. Registrar presupuesto para la compra de los materiales
 6. Verificar viabilidad del costo con respecto al presupuesto
