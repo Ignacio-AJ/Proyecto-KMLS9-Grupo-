@@ -17,6 +17,15 @@ while True:
     if pos == 0:
         break
     cantidad = int(input("ingrese cantidad del producto seleccionado:"))
-    costos = costos + (listado_productos[pos-1][1]*cantidad)
+    costo = costo + (listado_productos[pos-1][1]*cantidad)
 
-print(costos)
+print(costo)
+
+viabilidad = presupuesto - costo
+if viabilidad > 0:
+    print("Es viable. Le sobran", viabilidad, "soles.")
+elif viabilidad == 0:
+    print("Es viable. Sin embargo, le sobran", viabilidad, "soles.")
+else:
+    print("No es viable. Le faltan", viabilidad*(-1), "soles.")
+
