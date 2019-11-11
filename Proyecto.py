@@ -34,9 +34,13 @@ print("El costo total de los materiales registrados es de", costo, "soles.")
 # Verificación de la viabilidad del proyecto
 
 viabilidad = presupuesto - costo
+
+# Round para evitar el error de decimales en viabilidad
+
+viabilidad = round(viabilidad,2)
 if viabilidad > 0:
     print("El proyecto es viable. Su presupuesto excede en", viabilidad, "soles.")
 elif viabilidad == 0:
-    print("El proyecto es viable. Sin embargo, su presupuesto es exacto; le quedan", viabilidad, "soles.")
+    print("El proyecto es viable. Sin embargo, su presupuesto es exacto.)
 else:
     print("El proyecto no es viable. El costo de materiales excede a su presupuesto en", viabilidad*(-1), "soles.")
