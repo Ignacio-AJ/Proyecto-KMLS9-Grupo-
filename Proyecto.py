@@ -23,7 +23,7 @@ while True:
         break
     while True:
         cantidad = float(input("Ingrese cantidad del producto seleccionado:"))
-        if cantidad >0:
+        if cantidad >=0:
             break
     costo = costo + (listado_productos[pos-1][1]*cantidad)
 
