@@ -2,7 +2,7 @@
 
 # Registro de presupuesto
 
-presupuesto = float(input("Ingrese presupuesto del proyecto con respecto a los materiales de construcción:"))
+presupuesto = float(input("Ingrese presupuesto del proyecto con respecto a los materiales de construcción: "))
 
 # Organización de los materiales en lista
 
@@ -16,13 +16,13 @@ for i in range(len(listado_productos)):
 costo = 0
 while True:
     while True:
-        pos = int(input("Ingrese la posición del producto, iniciando de 1 hasta el último producto de la lista; digite 0 para finalizar:"))
+        pos = int(input("Ingrese la posición del producto, iniciando de 1 hasta el último producto de la lista; digite 0 para finalizar: "))
         if pos >= 0 and pos <= len(listado_productos):
             break
     if pos == 0:
         break
     while True:
-        cantidad = float(input("Ingrese cantidad del producto seleccionado:"))
+        cantidad = float(input("Ingrese cantidad del producto seleccionado: "))
         if cantidad >=0:
             break
     costo = costo + (listado_productos[pos-1][1]*cantidad)
