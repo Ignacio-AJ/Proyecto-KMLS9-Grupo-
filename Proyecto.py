@@ -2,7 +2,7 @@
 
 # Registro de presupuesto
 
-presupuesto = float(input("Ingrese presupuesto del proyecto con respecto a los materiales de construcción: "))
+presupuesto = float(input("Ingrese presupuesto del proyecto con respecto a los materiales de construcción:"))
 
 # Organización de los materiales en lista
 
@@ -16,12 +16,15 @@ for i in range(len(listado_productos)):
 costo = 0
 while True:
     while True:
-        pos = int(input("Ingrese la posición del producto, iniciando de 1 a 24; digite 0 para finalizar: "))
+        pos = int(input("Ingrese la posición del producto, iniciando de 1 hasta el último producto de la lista; digite 0 para finalizar:"))
         if pos >= 0 and pos <= len(listado_productos):
             break
     if pos == 0:
         break
-    cantidad = float(input("Ingrese cantidad del producto seleccionado: "))
+    while True:
+        cantidad = float(input("Ingrese cantidad del producto seleccionado:"))
+        if cantidad >0:
+            break
     costo = costo + (listado_productos[pos-1][1]*cantidad)
 
 # Uso de la función "round" para evitar el error de decimales con los múltiplos de 3 en costos
