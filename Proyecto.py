@@ -2,7 +2,10 @@
 
 # Registro de presupuesto
 
-presupuesto = float(input("Ingrese presupuesto del proyecto con respecto a los materiales de construcción: "))
+while True:
+    presupuesto = float(input("Ingrese presupuesto del proyecto con respecto a los materiales de construcción: "))
+    if presupuesto >= 0: 
+        break
 
 # Organización de los materiales en lista
 
